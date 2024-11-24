@@ -1,0 +1,20 @@
+<div class="container mt-3">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    {{#each prodotti}}
+      <div class="col">
+        <div class="card text-bg-light h-100">
+          <div class="card-body">
+            <h5 class="card-title">{{title}}</h5>
+            <p class="card-text">{{description}}</p>
+          </div>
+          <div class="container card-footer">
+            <a href="/prodotto/{{id}}" class="btn btn-sm btn-success">maggiori
+              informazioni</a>
+            <p class="badge rounded-pill text-bg-dark">{{category}}</p>
+            <p class="badge rounded-pill text-bg-dark">{{brand}}</p>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
